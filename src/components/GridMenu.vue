@@ -1,7 +1,7 @@
 <template>
   <div id="grids">
     <div id="header">
-      <header>Func's Profile</header>
+      <header>T. Matsudate's Profile</header>
     </div>
     <div id="menu">
       <nav>
