@@ -1,8 +1,6 @@
 <template>
   <div id="grids">
-    <div id="header">
-      <header>T. Matsudate's Profile</header>
-    </div>
+    <Header />
     <div id="menu">
       <nav>
         <ul>
@@ -21,8 +19,13 @@
 </template>
 
 <script>
+import Header from './Header.vue'
+
 export default {
-    name: 'GridMenu'
+    name: 'GridMenu',
+    components: {
+      Header
+    }
 }
 </script>
 
@@ -39,21 +42,6 @@ export default {
     display: grid;
     grid-template-rows: @header-height 100% - @header-height;
     grid-template-columns: @menu-width 100% - @menu-width;
-
-    #header {
-        grid-row: 1;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        background-color: rgb(32,32,32);
-
-
-        header {
-            font-size: 200%;
-            font-weight: bold;
-            font-style: normal;
-            padding: 0.5em;
-        }
-    }
 
     #menu {
         grid-row: 2;
