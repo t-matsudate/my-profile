@@ -1,17 +1,7 @@
 <template>
   <div id="grids">
     <Header />
-    <div id="menu">
-      <nav>
-        <ul>
-          <li>About Me</li>
-          <li>Resume</li>
-          <li>Portfolio</li>
-          <li>Goals</li>
-          <li>Progresses</li>
-        </ul>
-      </nav>
-    </div>
+    <Menu />
     <div id="main">
       <main>Test</main>
     </div>
@@ -20,11 +10,13 @@
 
 <script>
 import Header from './Header.vue'
+import Menu from './Menu.vue'
 
 export default {
     name: 'GridMenu',
     components: {
-      Header
+      Header,
+      Menu
     }
 }
 </script>
@@ -42,21 +34,6 @@ export default {
     display: grid;
     grid-template-rows: @header-height 100% - @header-height;
     grid-template-columns: @menu-width 100% - @menu-width;
-
-    #menu {
-        grid-row: 2;
-        grid-column: 1;
-        background-color: rgb(64,64,64);
-
-        nav {
-            li {
-                font-size: 150%;
-                font-weight: bold;
-                font-style: normal;
-                padding: 0.5em;
-            }
-        }
-    }
 
     #main {
         grid-row: 2;
