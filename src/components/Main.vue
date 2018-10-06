@@ -85,10 +85,10 @@
           </div>
         </section>
         <section id="section-donate">
-          <h2>寄付等について</h2>
+          <h2 class="section-titles">寄付等について</h2>
           <div class="section-contents">
-            <p><a href="https://www.paypal.me/funchs">Paypal.Me</a></p>
-            <p>現在、Paypal Meによる寄付金を募っております。総額に応じて以下の用途を検討しております。
+            <p id="paypal-me"><a href="https://www.paypal.me/funchs">Paypal.Me</a></p>
+            <div id="donate">現在、Paypal Meによる寄付金を募っております。総額に応じて以下の用途を検討しております。
               <ul id="plans">
                 <li><strong class="captions">10000円未満</strong>
                   <p class="descriptions">食費へ充当します。</p>
@@ -114,7 +114,7 @@
                 </li>
               </ul>
               <p>サービスの稼働を開始した段階でCamp-fireによる出資の募集に切り替えます。</p>
-            </p>
+            </div>
           </div>
         </section>
       </article>
@@ -243,6 +243,14 @@ export default {
             }
 
             #section-donate {
+              #paypal-me {
+                  padding: 1em;
+              }
+
+              #donate {
+                  padding: 1em;
+              }
+
               #plans {
                   list-style: none;
                   margin: 1em;
