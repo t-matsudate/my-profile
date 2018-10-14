@@ -177,7 +177,6 @@ export default {
 
                     & > li {
                         margin: 0em -1em 0em -1em;
-                        padding: 1em 2em 1em 2em;
                     }
 
                     & > li:nth-child(odd) {
@@ -187,6 +186,7 @@ export default {
 
                     ul {
                         list-style: none;
+                        margin: 1em 2em 1em 2em;
                     }
 
                     p {
@@ -218,7 +218,7 @@ export default {
 
                         .items {
                             list-style: outside;
-                            margin: 1em 1em 1em 2em;
+                            margin: 1em 2em 1em 2em;
                         }
                     }
 
@@ -230,7 +230,7 @@ export default {
 
                         .items {
                             list-style: outside;
-                            margin: 1em 1em 1em 2em;
+                            margin: 1em 2em 1em 2em;
                         }
                     }
 
@@ -242,7 +242,7 @@ export default {
 
                         .items {
                             list-style: outside;
-                            margin: 1em 1em 1em 2em;
+                            margin: 1em 2em 1em 2em;
                         }
                     }
                 }
