@@ -3,13 +3,24 @@
     <h2 class="section-titles">制作実績</h2>
     <div class="section-contents">
       <ul id="products">
-        <li><p>このページ！</p>
+        <li>
           <ul>
+            <li class="product-name"><p>このページ！</p></li>
             <li class="environments">
               <ul class="items">
+                <li>HTML5</li>
                 <li>Vue.js</li>
                 <li>Less</li>
-                <li>(後々で生HTMLをJadeに置き換えるかも)</li>
+                <li>CSS Grids</li>
+                <li>Nodejs</li>
+                <li><strong>Zenfone5z(Android 8.0)</strong> with Termux + Vim + Lighttpd</li>
+              </ul>
+            </li>
+            <li class="points">
+              <ul class="items">
+                <li>Vue.js, CSS Preprocesser, CSS Gridsに初挑戦しました。</li>
+                <li>HTML部分はいつまでも生のままは効率が悪すぎるので、次期バージョン（？）ではJadeかそのあたりに置き換える可能性があります。</li>
+                <li>何かご要望があれば装飾を追加します(優先度は低いです)</li>
               </ul>
             </li>
           </ul>
@@ -71,14 +82,35 @@ export default {
                         font-style: normal;
                     }
 
-                    .environments::before {
-                        display: block;
-                        content: "開発環境";
+                    .product-name {
+                        &::before {
+                            display: block;
+                            content: "製品名";
+                        }
                     }
 
-                    .items {
-                        list-style: outside;
-                        margin: 1em 2em 1em 2em;
+                    .environments {
+                        &::before {
+                            display: block;
+                            content: "開発環境";
+                        }
+
+                        .items {
+                            list-style: outside;
+                            margin: 1em 2em 1em 2em;
+                        }
+                    }
+
+                    .points {
+                        &::before {
+                            display: block;
+                            content: "工夫とチャレンジ";
+                        }
+
+                        .items {
+                            list-style: outside;
+                            margin: 1em 2em 1em 2em;
+                        }
                     }
                 }
             }
