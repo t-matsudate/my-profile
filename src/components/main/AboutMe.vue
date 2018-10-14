@@ -3,10 +3,10 @@
     <h2 class="section-titles">T. Matsudateについて</h2>
     <div class="section-contents">
       <ul id="about-me">
-        <li>氏名: Tsuyoshi Matsudate</li>
-        <li>最終職歴: 株式会社インフィニットループ(Web Developer(at 2015))
-          <ul id="last-environment">
-            <li><strong class="captions">開発環境</strong>
+        <li id="full-name"><p>Tsuyoshi Matsudate</p></li>
+        <li id="last-job"><p>株式会社インフィニットループ(Web Developer(at 2015))</p>
+          <ul>
+            <li id="last-environment">
               <ul class="items">
                 <li>PHP(maybe 5.x)</li>
                 <li>CakePHP (&lt;2.6)</li>
@@ -15,11 +15,11 @@
                 <li>Windows 8 + Vagrant</li>
               </ul>
             </li>
-            <li><strong class="captions">担当した製品</strong>
-              <ul id="last-product">
-                <li>製品名: Kamimage(カミメージ)</li>
-                <li>概要: アンケート等の入力フォームを紙媒体の感触を可能な限り再現した上で提供します。</li>
-                <li>URL: <a href="https://www.kamimage.com">www.kamimage.com</a></li>
+            <li id="last-product">
+              <ul class="items">
+                <li id="product-name">Kamimage(カミメージ)</li>
+                <li id="product-description">アンケート等の入力フォームを紙媒体の感触を可能な限り再現した上で提供します。</li>
+                <li id="product-url">URL: <a href="https://www.kamimage.com">www.kamimage.com</a></li>
               </ul>
             </li>
           </ul>
@@ -56,25 +56,44 @@ export default {
                 #about-me {
                     list-style: none;
                     margin: 1em;
-                }
 
-                #last-environment {
-                    list-style: none;
-                    margin: 1em;
-                }
+                    ul {
+                        list-style: none;
+                    }
 
-                #last-product {
-                    list-style: outside;
-                    margin: 1em;
-                }
+                    p {
+                        padding: 1em;
+                        font-size: 120%;
+                        font-weight: bold;
+                        font-style: normal;
+                    }
 
-                .captions {
-                    font-weight: bold;
-                }
+                    #full-name::before {
+                        display: block;
+                        content: "氏名";
+                    }
 
-                .items {
-                    list-style: outside;
-                    margin: 1em;
+                    #last-job::before {
+                        display: block;
+                        content: "最終職歴";
+                    }
+
+                    #last-job {
+                        #last-environment::before {
+                            display: block;
+                            content: "開発環境";
+                        }
+
+                        #last-product::before {
+                            display: block;
+                            content: "担当した製品";
+                        }
+
+                        .items {
+                            list-style: outside;
+                            margin: 1em 2em 1em 2em;
+                        }
+                    }
                 }
             }
         }
