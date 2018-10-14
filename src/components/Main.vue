@@ -4,24 +4,7 @@
       <article>
         <AboutMe />
         <Resume />
-        <section id="section-portfolio">
-          <h2 class="section-titles">制作実績</h2>
-          <div class="section-contents">
-            <ul id="products">
-              <li>このページ！
-                <ul class="environments">
-                  <li><strong class="captions">開発環境</strong>
-                    <ul class="items">
-                      <li>Vue.js</li>
-                      <li>Less</li>
-                      <li>(後々でJadeにするかも)</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Portfolio />
         <section id="section-goals">
           <h2 class="section-titles">到達目標</h2>
           <div class="section-contents">
@@ -108,12 +91,14 @@
 <script>
 import AboutMe from './main/AboutMe.vue'
 import Resume from './main/Resume.vue'
+import Portfolio from './main/Portfolio.vue';
 
 export default {
     name: 'Main',
     components: {
         AboutMe,
-        Resume
+        Resume,
+        Portfolio
     }
 }
 </script>
@@ -137,26 +122,6 @@ export default {
 
                 &-contents {
                     padding: 1em;
-                }
-            }
-
-            #section-portfolio {
-                #products {
-                    margin: 1em;
-                }
-
-                .environments {
-                    list-style: none;
-                    margin: 1em;
-                }
-
-                .captions {
-                    font-weight: bold;
-                }
-
-                .items {
-                    list-style: outside;
-                    margin: 1em;
                 }
             }
 
