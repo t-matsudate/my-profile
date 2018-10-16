@@ -6,29 +6,7 @@
         <Resume />
         <Portfolio />
         <Goals />
-        <section id="section-progresses">
-          <h2 class="section-titles">開発の進捗状況</h2>
-          <div class="section-contents">
-            <ul id="progresses">
-              <li><strong class="captions">Sheave</strong>
-                <p class="descriptions">Rustで開発しているRTMPサーバです。現在はRed5の完全なクローンにすることを目指しています。</p>
-                <p class="badges">Just Started.</p>
-              </li>
-              <li><strong class="captions">ライブ配信サービス(名称未定)</strong>
-                <p class="descriptions">裏で開発する映像配信サービスです。VPSという限られた環境からでも安定して使えるよう、ロードバランサとの親和性を高めることを念頭においています。</p>
-                <p class="badges">Just started.</p>
-              </li>
-              <li><strong class="captions">自作OS(名称未定)</strong>
-                <p class="descriptions">ライブストリーミングサーバの負荷を減らすため、受信したパケットにあるメディアデータをスムーズにGPUやその他のハードウェアエンコーダに流せる仕様を考えています。</p>
-                <p class="badges">Not yet.</p>
-              </li>
-              <li><strong class="captions">ChromiumへのGPUビデオでコードの実装(Linux向け)</strong>
-                <p class="descriptions">何故かまだGPUデコード機能が実装されていないLinux用のChromiumにその機能を実装します。</p>
-                <p class="badges">Not yet.</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Progresses />
         <section id="section-donate">
           <h2 class="section-titles">寄付等について</h2>
           <div class="section-contents">
@@ -72,6 +50,7 @@ import AboutMe from './main/AboutMe.vue'
 import Resume from './main/Resume.vue'
 import Portfolio from './main/Portfolio.vue'
 import Goals from './main/Goals.vue'
+import Progresses from './main/Progresses.vue'
 
 export default {
     name: 'Main',
@@ -79,7 +58,8 @@ export default {
         AboutMe,
         Resume,
         Portfolio,
-        Goals
+        Goals,
+        Progresses
     }
 }
 </script>
@@ -103,25 +83,6 @@ export default {
 
                 &-contents {
                     padding: 1em;
-                }
-            }
-
-            #section-progresses {
-                #progresses {
-                    list-style: none;
-                    margin: 1em;
-
-                    .captions {
-                        font-weight: bold;
-                    }
-
-                    .descriptions {
-                        padding: 1em;
-                    }
-
-                    .badges {
-                        padding: 1em;
-                    }
                 }
             }
 
