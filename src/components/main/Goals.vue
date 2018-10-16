@@ -8,11 +8,58 @@
             <li class="declarations"><p>映像視聴におけるブラウザ間の差異の緩和</p></li>
             <li class="descriptions">
               <p>ライブ映像視聴における、ブラウザ・OS間の違いやズレを0に近づけていきます。</p>
-              <p><i class="fab fa-firefox"></i>
-              == <i class="fab fa-chrome"></i>
-              == <i class="fab fa-edge"></i><small>(Maybe)</small>
-              == <i class="fab fa-safari"></i><small>(Maybe)</small>
-              </p>
+              <ul id="browsers">
+                <li id="caption"><p>ブラウザ毎のネイティブ対応状況</p></li>
+                <li class="icons"><i class="fab fa-firefox"></i>
+                  <small>Firefox</small></li>
+                <li class="features-firefox">
+                  <ul class="items">
+                    <li>GPU Video Decoding(H.264/H.265/VP9)
+                      <strong class="note-vp8"></strong>
+                    </li>
+                    <li><strong class="but-desktop">Native HTTP Live Streaming Handling</strong></li>
+                    <li><strong class="yet">Native WebRTC Handling</strong></li>
+                    <li><strong class="yet">Native SRT Handling</strong></li>
+                  </ul>
+                </li>
+                <li class="icons"><i class="fab fa-chrome"></i><br>
+                  <small>Chrome</small><br><small>(Chromium)</small></li>
+                <li class="features-chrome">
+                  <ul class="items">
+                    <li><strong class="but-linux">GPU Video Decoding(H.264/H.265/VP9)</strong>
+                      <strong class="note-vp8"></strong>
+                    </li>
+                    <li><strong class="but-desktop">Native HTTP Live Streaming Handling</strong></li>
+                    <li>Native WebRTC Handling</li>
+                    <li><strong class="yet">Native SRT Handling</strong></li>
+                  </ul>
+                </li>
+                <li class="icons"><i class="fab fa-edge"></i><br>
+                  <small>Edge</small></li>
+                <li class="features-edge">
+                  <ul class="items">
+                    <li>GPU Video Decoding(H.264/H.265/VP9)
+                      <strong class="note-vp8"></strong>
+                    </li>
+                    <li>Native HTTP Live Streaming Handling</li>
+                    <li><strong class="yet">Native WebRTC Handling</strong></li>
+                    <li><strong class="yet">Native SRT Handling</strong></li>
+                  </ul>
+                </li>
+                <li class="icons"><i class="fab fa-safari"></i><br>
+                  <small>Safari</small></li>
+                <li class="browsers-safari">
+                  <ul class="items">
+                    <li>GPU Video Decoding(H.264/H.265/VP9)
+                      <strong class="note-vp8"></strong>
+                    </li>
+                    <li>Native HTTP Live Streaming Handling</li>
+                    <li><strong class="yet">Native WebRTC Handling</strong></li>
+                    <li><strong class="yet">Native SRT Handling</strong></li>
+                  </ul>
+                </li>
+                <li id="color"><small>白文字:&nbsp;対応済み,&nbsp;黄色文字:&nbsp;OSによっては非対応,&nbsp;赤文字:&nbsp;どのバージョンでも非対応</small></li>
+              </ul>
             </li>
             <li class="concretes">
               <ul class="items">
@@ -133,24 +180,108 @@ export default {
                     font-style: normal;
                 }
  
-                .fab {
-                    font-size: 300%;
+                #browsers {
+                    display: grid;
+                    grid-template-columns: 20% 80%;
+                    grid-template-rows: repeat(6, auto);
+                    list-style: none;
+
+                    #caption {
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+
+                        p {
+                            margin-left: -2em;
+                        }
+                    }
+
+                    #color {
+                        grid-column-start: 1;
+                        grid-column-end: 3;
+                    }
+
+                    .fab {
+                        font-size: 300%;
+                    }
+
+                    .fa-firefox {
+                        color: hsl(20,100%,60%);
+                    }
+
+                    .fa-chrome {
+                        color: hsl(90,100%,60%);
+                    }
+
+                    .fa-edge {
+                        color: hsl(225,100%,60%);
+                    }
+
+                    .fa-safari {
+                        color: hsl(200,100%,40%);
+                    }
+
+                    .items {
+                        list-style: outside;
+                        margin: 1em 2em 1em 2em;
+                    }
+
+                    .note-vp8 {
+                        &::before {
+                            display: block;
+                            font-size: 0.8em;
+                            font-weight: normal;
+                            font-style: normal;
+                            color: hsl(0,0%,50%);
+                            content: "VP8: Nvidia製GPUでは非対応";
+                        }
+                    }
+
+                    .but {
+                        @weight: bold;
+                        @color: hsl(45, 100%, 60%);
+                        @display: block;
+                        @style: normal;
+                        @size: 0.8em;
+
+                        &-desktop {
+                            font-weight: @weight;
+                            color: @color;
+
+                            &::after {
+                                display: @display;
+                                font-style: @style;
+                                font-size: @size;
+                                font-weight: normal;
+                                color: hsl(0,0%,50%);
+                                content: "デスクトップ版は非対応";
+                            }
+                        }
+
+                        &-linux {
+                            font-weight: @weight;
+                            color: @color;
+
+                            &::after {
+                                display: @display;
+                                font-style: @style;
+                                font-size: @size;
+                                font-weight: normal;
+                                color: hsl(0,0%,50%);
+                                content: "Linuxデスクトップ版は非対応";
+                            }
+                        }
+                    }
+
+                    .yet {
+                        font-weight: bold;
+                        font-style: normal;
+                        color: hsl(0,100%,60%);
+                    }
+
                 }
 
-                .fa-firefox {
-                    color: hsl(20,100%,60%);
-                }
-
-                .fa-chrome {
-                    color: hsl(90,100%,60%);
-                }
-
-                .fa-edge {
-                    color: hsl(225,100%,60%);
-                }
-
-                .fa-safari {
-                    color: hsl(200,100%,40%);
+                #color {
+                    margin-bottom: 1em;
                 }
 
                 .declarations {
