@@ -1,5 +1,6 @@
 <template>
   <section id="section-progresses">
+    <a name="progresses"></a>
     <h2 class="section-titles">開発の進捗状況</h2>
     <div class="section-contents">
       <ul id="progresses">
