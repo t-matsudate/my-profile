@@ -1,5 +1,6 @@
 <template>
   <section id="section-donate">
+    <a name="donate"></a>
     <h2 class="section-titles">寄付等について</h2>
     <div class="section-contents">
       <p id="paypal-me"><a href="https://www.paypal.me/funchs">Paypal.Me</a></p>
