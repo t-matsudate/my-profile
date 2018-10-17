@@ -1,5 +1,6 @@
 <template>
   <section id="section-resume">
+    <a name="resume"></a>
     <h2 class="section-titles">職務経歴(日時降順)</h2>
     <div class="section-contents">
       <ul id="resume">
