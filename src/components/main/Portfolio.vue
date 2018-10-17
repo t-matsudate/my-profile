@@ -1,5 +1,6 @@
 <template>
   <section id="section-portfolio">
+    <a name="portfolio"></a>
     <h2 class="section-titles">制作実績</h2>
     <div class="section-contents">
       <ul id="products">
