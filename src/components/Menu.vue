@@ -7,6 +7,7 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#goals">Goals</a></li>
         <li><a href="#progresses">Progresses</a></li>
+        <li><a href="#donate">Donate</a></li>
       </ul>
     </nav>
   </div>
