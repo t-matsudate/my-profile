@@ -22,7 +22,6 @@ export default {
 </script>
 
 <style lang="less">
-@header-height: 20%;
 @menu-width: 20%;
 
 * {
@@ -32,7 +31,7 @@ export default {
 
 #grids {
     display: grid;
-    grid-template-rows: @header-height 100% - @header-height;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: @menu-width 100% - @menu-width;
 }
 </style>
