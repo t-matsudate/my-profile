@@ -1,5 +1,6 @@
 <template>
   <section id="section-about-me">
+    <a name="about-me"></a>
     <h2 class="section-titles">T. Matsudateについて</h2>
     <div class="section-contents">
       <ul id="about-me">
