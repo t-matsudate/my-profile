@@ -1,5 +1,6 @@
 <template>
   <section id="section-goals">
+    <a name="goals"></a>
     <h2 class="section-titles">到達目標</h2>
     <div class="section-contents">
       <ol id="goals">
