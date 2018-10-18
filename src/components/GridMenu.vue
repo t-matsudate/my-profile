@@ -33,5 +33,9 @@ export default {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: @menu-width 100% - @menu-width;
+
+    a {
+        color: hsl(0,0%,0%);
+    }
 }
 </style>

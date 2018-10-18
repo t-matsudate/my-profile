@@ -24,11 +24,12 @@ export default {
     #menu {
         grid-row: 2;
         grid-column: 1;
-        background-color: rgb(64,64,64);
+
+        background-color: hsl(90, 50%, 95%);
 
         nav {
             li {
-              font-size: 150%;
+              font-size: 120%;
               font-weight: bold;
               font-style: normal;
               padding: 0.5em;
