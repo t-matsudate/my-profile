@@ -108,8 +108,12 @@
                     }
 
                     & > li:nth-child(odd) {
-                        background-color: rgb(0,0,0);
-                        color: rgb(255,255,255);
+                        background-color: hsl(90,80%,40%);
+                        color: hsl(0,100%,100%);
+
+                        a {
+                            color: hsl(0,100%,100%);
+                        }
                     }
 
                     ul {
@@ -153,7 +157,8 @@
                 #note-campfire {
                     margin: 1em;
                     padding: 1em;
-                    background-color: hsl(45,100%,60%);
+                    background-color: hsl(90,80%,40%);
+                    color: hsl(0,100%,100%);
                     border-radius: 20px;
                 }
             }
