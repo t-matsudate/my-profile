@@ -35,7 +35,7 @@ export default {
     grid-template-columns: @menu-width 100% - @menu-width;
 
     a {
-        color: hsl(0,0%,0%);
+        color: hsl(90,80%,40%);
     }
 }
 </style>

@@ -16,7 +16,7 @@ export default {
         grid-row: 1;
         grid-column-start: 1;
         grid-column-end: 3;
-        background-color: hsl(90,80%,40%);
+        background-color: hsl(90, 80%, 40%);
         color: hsl(0,100%,100%);
 
         header {

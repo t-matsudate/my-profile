@@ -181,8 +181,8 @@ export default {
                     }
 
                     & > li:nth-child(odd) {
-                        background-color: rgb(0,0,0);
-                        color: rgb(255,255,255);
+                        background-color: hsl(90,80%,40%);
+                        color: hsl(0,100%,100%);
                     }
 
                     ul {

@@ -35,6 +35,11 @@ export default {
               padding: 0.5em;
             }
         }
+
+        a {
+            color: hsl(0,0%,0%);
+            text-decoration: none;
+        }
     }
 }
 </style>
