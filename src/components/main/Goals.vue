@@ -165,8 +165,12 @@ export default {
                 }
 
                 & > li:nth-child(odd) {
-                    background-color: rgb(0,0,0);
-                    color: rgb(255,255,255);
+                    background-color: hsl(90,80%,40%);
+                    color: hsl(0,100%,100%);
+
+                    a {
+                        color: hsl(0,100%,100%);
+                    }
                 }
 
                 ul {
@@ -232,14 +236,14 @@ export default {
                             font-size: 0.8em;
                             font-weight: normal;
                             font-style: normal;
-                            color: hsl(0,0%,50%);
+                            color: hsl(90,80%,50%);
                             content: "VP8: Nvidia製GPUでは非対応";
                         }
                     }
 
                     .but {
                         @weight: bold;
-                        @color: hsl(45, 100%, 60%);
+                        @color: hsl(45, 80%, 60%);
                         @display: block;
                         @style: normal;
                         @size: 0.8em;
@@ -253,7 +257,7 @@ export default {
                                 font-style: @style;
                                 font-size: @size;
                                 font-weight: normal;
-                                color: hsl(0,0%,50%);
+                                color: hsl(90,80%,50%);
                                 content: "デスクトップ版は非対応";
                             }
                         }
@@ -267,7 +271,7 @@ export default {
                                 font-style: @style;
                                 font-size: @size;
                                 font-weight: normal;
-                                color: hsl(0,0%,50%);
+                                color: hsl(90,80%,50%);
                                 content: "Linuxデスクトップ版は非対応";
                             }
                         }
@@ -276,7 +280,7 @@ export default {
                     .yet {
                         font-weight: bold;
                         font-style: normal;
-                        color: hsl(0,100%,60%);
+                        color: hsl(0,80%,60%);
                     }
 
                 }
