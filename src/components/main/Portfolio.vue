@@ -69,6 +69,10 @@ export default {
                     & > li:nth-child(odd) {
                         background-color: hsl(90,80%,40%);
                         color: hsl(0,100%,100%);
+
+                        a {
+                            color: hsl(0,100%,100%);
+                        }
                     }
 
                     ul {
