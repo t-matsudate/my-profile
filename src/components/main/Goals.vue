@@ -187,7 +187,7 @@ export default {
  
                 #browsers {
                     display: grid;
-                    grid-template-columns: 20% 80%;
+                    grid-template-columns: 20% auto;
                     grid-template-rows: repeat(6, auto);
                     list-style: none;
 

@@ -32,7 +32,7 @@ export default {
 #grids {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: @menu-width 100% - @menu-width;
+    grid-template-columns: @menu-width auto;
 
     a {
         color: hsl(90,80%,40%);
