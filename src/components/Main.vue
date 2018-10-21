@@ -37,8 +37,10 @@ export default {
 <style lang="less">
 #grids {
     #main {
+        z-index: 0;
         grid-row: 2;
-        grid-column: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
 
         main {
             padding: 1em;

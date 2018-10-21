@@ -1,5 +1,6 @@
 <template>
   <div id="grids">
+    <MenuBar />
     <Header />
     <Menu />
     <Main />
@@ -7,6 +8,7 @@
 </template>
 
 <script>
+import MenuBar from './MenuBar.vue'
 import Header from './Header.vue'
 import Menu from './Menu.vue'
 import Main from './Main.vue'
@@ -14,6 +16,7 @@ import Main from './Main.vue'
 export default {
     name: 'GridMenu',
     components: {
+      MenuBar,
       Header,
       Menu,
       Main

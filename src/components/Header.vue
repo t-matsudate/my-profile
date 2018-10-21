@@ -1,6 +1,8 @@
 <template>
   <div id="header">
-    <header>T. Matsudate's Profile</header>
+    <header>
+      <h1 id="app-title">T. Matsudate's Profile</h1>
+    </header>
   </div>
 </template>
 
@@ -13,17 +15,20 @@ export default {
 <style lang="less">
 #grids {
     #header {
+        z-index: 1;
         grid-row: 1;
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column: 2;
         background-color: hsl(90, 80%, 40%);
-        color: hsl(0,100%,100%);
+        color: hsl(90,100%,100%);
 
         header {
-            font-size: 200%;
-            font-weight: bold;
-            font-style: normal;
-            padding: 0.5em;
+            #app-title {
+                grid-column: 2;
+                padding: 0.5em;
+                font-size: 200%;
+                font-weight: bold;
+                font-style: normal;
+            }
         }
     }
 }

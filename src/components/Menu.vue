@@ -1,6 +1,7 @@
 <template>
-  <div id="menu">
+  <div id="menu" class="menu-hidden">
     <nav>
+      <MenuBar />
       <ul>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -14,25 +15,45 @@
 </template>
 
 <script>
+import MenuBar from './MenuBar.vue'
+
 export default {
-    name: 'Menu'
+    name: 'Menu',
+    components: {
+        MenuBar
+    }
 }
 </script>
 
 <style lang="less">
 #grids {
     #menu {
-        grid-row: 2;
-        grid-column: 1;
-
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 20%;
         background-color: hsl(90, 50%, 95%);
 
         nav {
+            .menu-bar {
+                z-index: 2;
+                background-color: hsl(90,50%,95%);
+
+                a {
+                    .fas {
+                        margin: 0.5em;
+                        font-size: 200%;
+                        color: hsl(90,80%,40%);
+                    }
+                }
+            }
+
             li {
-              font-size: 120%;
-              font-weight: bold;
-              font-style: normal;
-              padding: 0.5em;
+                font-size: 100%;
+                font-weight: normal;
+                font-style: normal;
+                padding: 0.5em;
             }
         }
 
@@ -40,6 +61,14 @@ export default {
             color: hsl(0,0%,0%);
             text-decoration: none;
         }
+    }
+
+    #menu-shown {
+        display: block;
+    }
+
+    #menu-hidden {
+        display: none;
     }
 }
 </style>
