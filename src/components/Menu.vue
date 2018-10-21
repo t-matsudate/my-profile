@@ -63,11 +63,11 @@ export default {
         }
     }
 
-    #menu-shown {
+    .menu-shown {
         display: block;
     }
 
-    #menu-hidden {
+    .menu-hidden {
         display: none;
     }
 }
