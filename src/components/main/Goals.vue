@@ -11,7 +11,7 @@
               <p>ライブ映像視聴における、ブラウザ・OS間の違いやズレを0に近づけていきます。</p>
               <ul id="browsers">
                 <li id="caption"><p>ブラウザ毎のネイティブ対応状況</p></li>
-                <li class="icons"><i class="fab fa-firefox"></i>
+                <li class="icons"><i class="fab fa-firefox"></i><br>
                   <small>Firefox</small></li>
                 <li class="features-firefox">
                   <ul class="items">
