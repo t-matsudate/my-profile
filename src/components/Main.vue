@@ -38,9 +38,8 @@ export default {
 #grids {
     #main {
         z-index: 0;
+        margin-top: 3em;
         grid-row: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
 
         main {
             padding: 1em;

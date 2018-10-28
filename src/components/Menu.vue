@@ -1,16 +1,18 @@
 <template>
-  <div id="menu" class="menu-hidden">
-    <nav>
-      <MenuBar />
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#progresses">Progresses</a></li>
-        <li><a href="#donate">Donate</a></li>
-      </ul>
-    </nav>
+  <div id="menu" class="hidden">
+    <MenuBar />
+    <div id="menu-list">
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#progresses">Progresses</a></li>
+          <li><a href="#donate">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </template>
 
@@ -32,43 +34,52 @@ export default {
         position: fixed;
         top: 0;
         bottom: 0;
-        width: 20%;
-        background-color: hsl(90, 50%, 95%);
+        overflow-y: scroll;
 
-        nav {
-            .menu-bar {
-                z-index: 2;
-                background-color: hsl(90,50%,95%);
+        @media (min-width: 30rem) {
+            width: 20%;
+        }
 
-                a {
-                    .fas {
-                        margin: 0.5em;
-                        font-size: 200%;
-                        color: hsl(90,80%,40%);
+        @media (max-width: 30rem) {
+            width: 50%;
+        }
+
+        background-color: hsl(90, 50%, 99%);
+
+        .menu-bar {
+            padding: 1em;
+
+            a {
+                .fas {
+                    font-size: 200%;
+                    color: hsl(90,80%,40%);
+                }
+            }
+        }
+
+        #menu-list {
+            nav {
+                li {
+                    font-size: 100%;
+                    font-weight: normal;
+                    font-style: normal;
+                    padding: 0.5em;
+
+                    a {
+                        color: hsl(0,0%,0%);
+                        text-decoration: none;
                     }
                 }
             }
-
-            li {
-                font-size: 100%;
-                font-weight: normal;
-                font-style: normal;
-                padding: 0.5em;
-            }
-        }
-
-        a {
-            color: hsl(0,0%,0%);
-            text-decoration: none;
         }
     }
 
-    .menu-shown {
-        display: block;
-    }
-
-    .menu-hidden {
+    #menu.hidden {
         display: none;
+    }
+
+    #menu.shown {
+        display: block;
     }
 }
 </style>

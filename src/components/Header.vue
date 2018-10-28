@@ -1,14 +1,20 @@
 <template>
   <div id="header">
     <header>
+      <MenuBar />
       <h1 id="app-title">T. Matsudate's Profile</h1>
     </header>
   </div>
 </template>
 
 <script>
+import MenuBar from './MenuBar.vue'
+
 export default {
-    name: 'Header'
+    name: 'Header',
+    components: {
+        MenuBar
+    }
 }
 </script>
 
@@ -16,12 +22,28 @@ export default {
 #grids {
     #header {
         z-index: 1;
+        position: fixed;
         grid-row: 1;
-        grid-column: 2;
+        width: 100%;
         background-color: hsl(90, 80%, 40%);
         color: hsl(90,100%,100%);
 
         header {
+            display: grid;
+            grid-template-columns: 3em auto;
+
+            .menu-bar {
+                grid-column: 1;
+                padding: 1em;
+
+                a {
+                    .fas {
+                        font-size: 200%;
+                        color: hsl(90,100%,100%);
+                    }
+                }
+            }
+
             #app-title {
                 grid-column: 2;
                 padding: 0.5em;
