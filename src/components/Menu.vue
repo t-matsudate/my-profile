@@ -4,12 +4,12 @@
     <div id="menu-list">
       <nav>
         <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#goals">Goals</a></li>
-          <li><a href="#progresses">Progresses</a></li>
-          <li><a href="#donate">Donate</a></li>
+          <li><a href="#about-me">T.Matsudateについて</a></li>
+          <li><a href="#resume">履歴</a></li>
+          <li><a href="#portfolio">ポートフォリオ</a></li>
+          <li><a href="#goals">到達目標</a></li>
+          <li><a href="#progresses">開発の進捗状況</a></li>
+          <li><a href="#donate">寄付等について</a></li>
         </ul>
       </nav>
     </div>
