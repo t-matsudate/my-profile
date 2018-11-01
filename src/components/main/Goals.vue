@@ -236,7 +236,7 @@ export default {
                             font-size: 0.8em;
                             font-weight: normal;
                             font-style: normal;
-                            color: hsl(90,80%,50%);
+                            color: hsl(90,0%,0%);
                             content: "VP8: Nvidia製GPUでは非対応";
                         }
                     }
@@ -257,7 +257,7 @@ export default {
                                 font-style: @style;
                                 font-size: @size;
                                 font-weight: normal;
-                                color: hsl(90,80%,50%);
+                                color: hsl(90,0%,0%);
                                 content: "デスクトップ版は非対応";
                             }
                         }
@@ -271,7 +271,7 @@ export default {
                                 font-style: @style;
                                 font-size: @size;
                                 font-weight: normal;
-                                color: hsl(90,80%,50%);
+                                color: hsl(90,0%,0%);
                                 content: "Linuxデスクトップ版は非対応";
                             }
                         }
