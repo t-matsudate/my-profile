@@ -42,7 +42,7 @@ export default {
         grid-row: 2;
 
         main {
-            padding: 1em;
+            padding: 2em 1em 1em 1em;
 
             section {
                 &-titles {
