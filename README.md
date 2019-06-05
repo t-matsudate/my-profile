@@ -15,6 +15,7 @@ T. Matsudate's Profile to be created by Vue.js
 * 進捗状況
   * 私自身の各リポジトリのコミット状況(CIを経由してあればそのバッジを添えます)
   * 就職活動の現在の状況 等
+* RTMPサーバ等の実装の記録(ブログ形式？)
 
 ### 開発環境
 
@@ -67,9 +68,7 @@ T. Matsudate's Profile to be created by Vue.js
     * プロジェクト自体は[Gitlab](https://gitlab.com)に置きます。
   * 最終的には完全なRust製にするつもりです。
     * Rust実装は、公開可能な部分については(可能な限り)毎日21:00あたりから以下のいずれかのサービスでライブ配信を行う予定です：
-      * [ニコニコ生放送](http://live.nicovideo.jp)
-      * [ツイキャス](https://twitcasting.tv)
-      * [Mirrativ](https://www.mirrativ.com)
+      * [YouTube](https://youtube.com/tmatsudate/live)
     * Flashの存在が大前提になっているAPIを完全にHTML5ベースに置き換えていきます。
     * WebAssemblyでフロントエンド側と連携を取れるようにするのが理想です。
     * 最終的にはRTMP部分を取り除き、HTTP Live Streamingで送受信されるデータだけで映像をサービスできるようにしたいと思います。
@@ -78,7 +77,7 @@ T. Matsudate's Profile to be created by Vue.js
      * 出力するするHTMLを表現しやすいです([hiccup](https://github.com/weavejester/hiccup)があればVector構造に収まったキーワードとマップをコンパイルするだけでHTMLを生成できます)。
      * ビルドツール[Leiningen](https://github.com/technomancy/leiningen)が使いやすく、また覚えやすいです。
      * サーバサイドと同様の構文で変換できるJavascriptトランスパイラ([Clojurescript](https://clojurescript.org))があります。  
-     *S式だからコードを書く上であまり多くの事を同時に覚えなくていいのは大きいです！*
+     * S式だからコードを書く上であまり多くの事を同時に覚えなくていいのは大きいです！*
      * 何よりここ数年で一番私の手に馴染んでいます。
    * Clojureで拡張したRed5サーバとの迅速かつ柔軟な連携を可能にします。
      * Red5もまたJava製であるため親和性は高いと考えます(詳細は当該リポジトリのREADMEやドキュメントに記載します)。
@@ -113,10 +112,11 @@ RTMPサーバ及び配信サービスについては、いずれにしてもバ�
 * [x] 目標
 * [x] 開発の進捗状況
 * [x] 寄付等について
+* [ ] 実装の記録(WIP)
 
 ライセンス
 ---
 
 未定
 
-&copy; 2018 t-matsudate
+&copy; 2018-2019 t-matsudate
