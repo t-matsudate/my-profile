@@ -28,7 +28,7 @@
         </li>
         <li>
           <ul>
-            <li class="product-name"><p><a href="https://t-matsudate.github.io/rtmp-reports/">RTMP Implementation Reports</a></p></li>
+            <li class="product-name"><p><a href="https://t-matsudate.github.io/rtmp-reports/">RTMP Implementation Reports</a><br>RTMP サーバの実装メモと直近の仕様の整理</p></li>
             <li class="environments">
               <ul class="items">
                 <li>Zenfone 5Z (Android 9)</li>
