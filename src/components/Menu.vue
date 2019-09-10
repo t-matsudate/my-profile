@@ -35,15 +35,7 @@ export default {
         top: 0;
         bottom: 0;
         overflow-y: scroll;
-
-        @media (min-width: 30rem) {
-            width: 20%;
-        }
-
-        @media (max-width: 30rem) {
-            width: 50%;
-        }
-
+        width: 50%;
         background-color: hsl(90, 50%, 99%);
 
         .menu-bar {
