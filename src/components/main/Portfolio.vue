@@ -26,6 +26,35 @@
             </li>
           </ul>
         </li>
+        <li>
+          <ul>
+            <li class="product-name"><p><a href="https://t-matsudate.github.io/rtmp-reports/">RTMP Implementation Reports</a></p></li>
+            <li class="environments">
+              <ul class="items">
+                <li>Zenfone 5Z (Android 9)</li>
+                <li>Termux</li>
+                <li>Vim</li>
+                <li>Vue.js 2.6.10</li>
+                <li>Vue Router 3.0.7</li>
+                <li>Markdown-it 9.1.0 with its many plugins.</li>
+                <li>Katex 0.11.0</li>
+                <li>Highlight.js 9.15.10</li>
+                <li>Flowchart.js 1.12.2</li>
+                <li>GitHub Markdown CSS(<a href="https://www.npmjs.com/package/github-markdown-css">NPM</a>)</li>
+                <li>Less 3.10.3</li>
+              </ul>
+            </li>
+            <li class="points">
+              <ul class="items">
+                <li>個別の記事にアクセスできるようにルーティングしてみました。</li>
+                <li>しかし、GitHubが抱えているサーバサイドのルーティング機能との相性があまりよくなく、<strong>ロケーションバーからの直接の移動ができない</strong>状況です。<br>(npm run serveで動かした時は素で移動できてたのになあ…)</li>
+                <li>よって、記事が一通り出揃った頃合いでNuxt.jsによる静的サイト生成に切り替えます。</li>
+                <li>記事自体はMarkdown-itにプラグインを色々追加して記法やマークアップのパターンを拡張して表現力を高めています。<br>(詳しくはソースのpackage.jsonをご覧ください)</li>
+                <li><em>(NPMってJSのファイル容量が250KBを超えると警告してくるんだね…)</em></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </section>
